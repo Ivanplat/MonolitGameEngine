@@ -88,9 +88,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source\EnginePCH.cpp" />
+    <ClCompile Include="Source\Engine\Engine.cpp" />
+    <ClCompile Include="Source\Modules\Win32\WinEntry.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\EnginePCH.h" />
+    <ClInclude Include="Source\Engine\Engine.h" />
+    <ClInclude Include="Source\Modules\Win32\WinEntry.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

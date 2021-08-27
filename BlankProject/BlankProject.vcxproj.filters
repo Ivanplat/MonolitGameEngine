@@ -8,23 +8,32 @@
     <Filter Include="Source">
       <UniqueIdentifier>{d5be38cd-98a8-48a8-b335-78eb198c44a0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\private">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Source\Application">
+      <UniqueIdentifier>{fb2645be-db59-4853-b5cb-1e9635cd4cfc}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\public">
+    <Filter Include="Source\Application\public">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source\Application\private">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\pch.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Application\Application.cpp">
+      <Filter>Source\Application\private</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\pch.h">
       <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Application.h">
+      <Filter>Source\Application\public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -8,23 +8,50 @@
     <Filter Include="Source">
       <UniqueIdentifier>{f738e75c-6c75-4ad6-88bd-03a2d87947fe}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\private">
+    <Filter Include="Source\Engine">
+      <UniqueIdentifier>{df0db464-f9fb-497c-8cff-1ccb62f1f112}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine\public">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source\Engine\private">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Source\public">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Source\Modules">
+      <UniqueIdentifier>{7e2a81de-1da9-44d9-924c-8ef74c551dd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Modules\Win32">
+      <UniqueIdentifier>{067991e1-31a5-4996-a665-20bb7440540b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Modules\Win32\private">
+      <UniqueIdentifier>{a0cdbb67-0aa4-4f2e-bed4-3a12ea4ee6dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Modules\Win32\public">
+      <UniqueIdentifier>{620627cf-9579-46af-b91d-f7b5d670f7a8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\EnginePCH.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Engine\Engine.cpp">
+      <Filter>Source\Engine\private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Modules\Win32\WinEntry.cpp">
+      <Filter>Source\Modules\Win32\public</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\EnginePCH.h">
       <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Engine.h">
+      <Filter>Source\Engine\public</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Modules\Win32\WinEntry.h">
+      <Filter>Source\Modules\Win32\private</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
