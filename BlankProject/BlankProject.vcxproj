@@ -63,6 +63,7 @@
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\Users\EventGraph\source\repos\MonolitGameEngine\BlankProject\Source;C:\Users\EventGraph\source\repos\MonolitGameEngine\MonolitGameEngine\Source</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -81,7 +82,7 @@
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>C:\Users\EventGraph\source\repos\MonolitGameEngine\MonolitGameEngine\Source;C:\Users\EventGraph\source\repos\MonolitGameEngine\BlankProject\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\EventGraph\source\repos\MonolitGameEngine\BlankProject\Source;C:\Users\EventGraph\source\repos\MonolitGameEngine\MonolitGameEngine\Source</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -91,17 +92,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MonolitGameEngine\MonolitGameEngine.vcxproj">
-      <Project>{f300b5b0-0132-4ff2-bde6-de73af338cda}</Project>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="Source\Application\Application.cpp" />
     <ClCompile Include="Source\pch.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Application\Application.h" />
     <ClInclude Include="Source\pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MonolitGameEngine\MonolitGameEngine.vcxproj">
+      <Project>{f300b5b0-0132-4ff2-bde6-de73af338cda}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

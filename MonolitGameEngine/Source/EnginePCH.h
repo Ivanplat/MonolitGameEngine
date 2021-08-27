@@ -4,8 +4,8 @@
 #include <Windows.h>
 #endif
 
-#ifdef BUILD_DLL
+#ifdef DLL_BUILD
 	#define MONOLITENGINEAPI __declspec(dllexport)
 #else
-	#define MONOLITENGINEAPI __declspec(import)
+	#define MONOLITENGINEAPI __declspec(dllimport)
 #endif 
